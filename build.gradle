@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "4.0.3"
+}
+
+group = 'net.lomeli.pixelbot'
+version = "${pixelBotVersion}"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    compile "org.jsoup:jsoup:${jsoupVersion}"
+    compile "com.google.code.gson:gson:${gsonVersion}"
+    compile "com.github.sys1yagi.mastodon4j:mastodon4j:${mastodonJVersion}"
+}
+
+jar {
+    manifest  {
+        attributes 'Main-Class' : "net.lomeli.pixelbot.PixelBot"
+    }
+}
+
+shadowJar {
+    classifier = "withDependencies"
+}
+
+tasks.withType(Zip) { task ->
+    task.doLast {
+        ant.checksum algorithm: 'MD5', file: it.archivePath
+        ant.checksum algorithm: 'SHA1', file: it.archivePath
+    }
+}
+
+build {
+    dependsOn clean
+    dependsOn jar
+    dependsOn shadowJar
+
+    jar.mustRunAfter clean
+    shadowJar.mustRunAfter jar
+}

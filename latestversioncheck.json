@@ -1,0 +1,56 @@
+[
+  {
+    "deviceID": "crosshatch",
+    "deviceName": "Pixel 3 XL",
+    "latestOTA": {
+      "otaVersion": "9.0.0 (PQ1A.181205.006.A1, Dec 2018, Docomo)",
+      "otaDownloadLink": "https://dl.google.com/dl/android/aosp/crosshatch-ota-pq1a.181205.006.a1-359dc9b0.zip",
+      "otaHash": "359dc9b019c2ab4e54a3c3133605411104f6e908273c492cbb89b2a30a982af7"
+    }
+  },
+  {
+    "deviceID": "blueline",
+    "deviceName": "Pixel 3",
+    "latestOTA": {
+      "otaVersion": "9.0.0 (PQ1A.181205.006.A1, Dec 2018, Docomo)",
+      "otaDownloadLink": "https://dl.google.com/dl/android/aosp/blueline-ota-pq1a.181205.006.a1-a665cd08.zip",
+      "otaHash": "a665cd087b87fd0b9186441faed55835b208f39af7bb8ad02698495f8890c7a0"
+    }
+  },
+  {
+    "deviceID": "taimen",
+    "deviceName": "Pixel 2 XL",
+    "latestOTA": {
+      "otaVersion": "9.0.0 (PQ1A.181205.002, Dec 2018)",
+      "otaDownloadLink": "https://dl.google.com/dl/android/aosp/taimen-ota-pq1a.181205.002-5f46b944.zip",
+      "otaHash": "5f46b9449157d3aef1771872b7b18e46c81ee56061e802dd3eecbea7e4030e6a"
+    }
+  },
+  {
+    "deviceID": "walleye",
+    "deviceName": "Pixel 2",
+    "latestOTA": {
+      "otaVersion": "9.0.0 (PQ1A.181205.002, Dec 2018)",
+      "otaDownloadLink": "https://dl.google.com/dl/android/aosp/walleye-ota-pq1a.181205.002-8df1d1f7.zip",
+      "otaHash": "8df1d1f7d916ded7c1661c7086e84c2505fca80902e543e3674213b43933ae7a"
+    }
+  },
+  {
+    "deviceID": "marlin",
+    "deviceName": "Pixel XL",
+    "latestOTA": {
+      "otaVersion": "9.0.0 (PQ1A.181205.002.A1, Dec 2018)",
+      "otaDownloadLink": "https://dl.google.com/dl/android/aosp/marlin-ota-pq1a.181205.002.a1-b7df60eb.zip",
+      "otaHash": "b7df60eb2e9b458843a185cb3427c25f1f264fbcb867bc08d2fcd420f47ac95d"
+    }
+  },
+  {
+    "deviceID": "sailfish",
+    "deviceName": "Pixel",
+    "latestOTA": {
+      "otaVersion": "9.0.0 (PQ1A.181205.002.A1, Dec 2018)",
+      "otaDownloadLink": "https://dl.google.com/dl/android/aosp/sailfish-ota-pq1a.181205.002.a1-a85b355b.zip",
+      "otaHash": "a85b355b5b8de5b0bea33c6d774d01b39095941a679c2dea7effbebe79f052c8"
+    }
+  }
+]
