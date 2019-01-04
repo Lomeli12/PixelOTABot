@@ -37,6 +37,7 @@ public class PixelBot {
         deviceIDs = OTAScrapper.getDeviceIDs();
         if (deviceIDs.size() < 1) {
             print.println("No devices to lookup. Exiting...");
+            System.exit(0);
         }
         readLastOTAInfo();
 
@@ -78,7 +79,7 @@ public class PixelBot {
 
     private static void getLatestDeviceInfo() {
         print.println("Getting latest device info.");
-        if (!firstRead)
+        if (!firstRead && latestDeviceOTA != null)
             oldDeviceOTA = latestDeviceOTA;
         else firstRead = false;
         latestDeviceOTA = OTAScrapper.getDeviceInfoList(deviceIDs);
